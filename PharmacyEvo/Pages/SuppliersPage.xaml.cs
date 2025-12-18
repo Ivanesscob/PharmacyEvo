@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class SuppliersPage : Page
     {
         public ObservableCollection<Supplier> SuppliersCollection { get; set; }
+        private ObservableCollection<Supplier> _allSuppliers;
         public Supplier SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             SuppliersCollection = new ObservableCollection<Supplier>();
+            _allSuppliers = new ObservableCollection<Supplier>();
             DataGrid.ItemsSource = SuppliersCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allSuppliers.Clear();
             SuppliersCollection.Clear();
             var data = ProcedureDB.GetSuppliers();
             foreach (var item in data)
             {
+                _allSuppliers.Add(item);
                 SuppliersCollection.Add(item);
             }
         }
@@ -49,6 +53,19 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            SuppliersCollection.Clear();
+
+            foreach (var supplier in _allSuppliers)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    supplier.Name?.ToLower().Contains(searchText) == true ||
+                    supplier.Phone?.ToLower().Contains(searchText) == true ||
+                    supplier.Address?.ToLower().Contains(searchText) == true)
+                {
+                    SuppliersCollection.Add(supplier);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

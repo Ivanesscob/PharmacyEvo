@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class MedicineBatchesPage : Page
     {
         public ObservableCollection<MedicineBatch> MedicineBatchesCollection { get; set; }
+        private ObservableCollection<MedicineBatch> _allMedicineBatches;
         public MedicineBatch SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             MedicineBatchesCollection = new ObservableCollection<MedicineBatch>();
+            _allMedicineBatches = new ObservableCollection<MedicineBatch>();
             DataGrid.ItemsSource = MedicineBatchesCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allMedicineBatches.Clear();
             MedicineBatchesCollection.Clear();
             var data = ProcedureDB.GetMedicineBatches();
             foreach (var item in data)
             {
+                _allMedicineBatches.Add(item);
                 MedicineBatchesCollection.Add(item);
             }
         }
@@ -49,6 +53,18 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            MedicineBatchesCollection.Clear();
+
+            foreach (var batch in _allMedicineBatches)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    batch.Quantity.ToString().Contains(searchText) ||
+                    batch.ExpirationDate.ToString("dd.MM.yyyy").Contains(searchText))
+                {
+                    MedicineBatchesCollection.Add(batch);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

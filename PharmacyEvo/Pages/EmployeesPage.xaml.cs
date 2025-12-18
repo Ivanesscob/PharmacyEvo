@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class EmployeesPage : Page
     {
         public ObservableCollection<Employee> EmployeesCollection { get; set; }
+        private ObservableCollection<Employee> _allEmployees;
         public Employee SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             EmployeesCollection = new ObservableCollection<Employee>();
+            _allEmployees = new ObservableCollection<Employee>();
             DataGrid.ItemsSource = EmployeesCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allEmployees.Clear();
             EmployeesCollection.Clear();
             var data = ProcedureDB.GetEmployees();
             foreach (var item in data)
             {
+                _allEmployees.Add(item);
                 EmployeesCollection.Add(item);
             }
         }
@@ -49,6 +53,19 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            EmployeesCollection.Clear();
+
+            foreach (var employee in _allEmployees)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    employee.FullName?.ToLower().Contains(searchText) == true ||
+                    employee.Email?.ToLower().Contains(searchText) == true ||
+                    employee.Phone?.ToLower().Contains(searchText) == true)
+                {
+                    EmployeesCollection.Add(employee);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

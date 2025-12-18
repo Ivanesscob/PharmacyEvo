@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class CountriesPage : Page
     {
         public ObservableCollection<Country> CountriesCollection { get; set; }
+        private ObservableCollection<Country> _allCountries;
         public Country SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             CountriesCollection = new ObservableCollection<Country>();
+            _allCountries = new ObservableCollection<Country>();
             DataGrid.ItemsSource = CountriesCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allCountries.Clear();
             CountriesCollection.Clear();
             var data = ProcedureDB.GetCountries();
             foreach (var item in data)
             {
+                _allCountries.Add(item);
                 CountriesCollection.Add(item);
             }
         }
@@ -49,6 +53,17 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            CountriesCollection.Clear();
+
+            foreach (var country in _allCountries)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    country.CountryName?.ToLower().Contains(searchText) == true)
+                {
+                    CountriesCollection.Add(country);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

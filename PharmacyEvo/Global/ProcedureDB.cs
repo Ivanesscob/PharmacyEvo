@@ -311,7 +311,8 @@ namespace PharmacyEvo.Global
                 CategoryId = (int)row["CategoryId"],
                 ManufacturerId = (int)row["ManufacturerId"],
                 Price = (decimal)row["Price"],
-                IsPrescription = (bool)row["IsPrescription"]
+                IsPrescription = (bool)row["IsPrescription"],
+                ImagePath = row["ImagePath"] == DBNull.Value ? null : row["ImagePath"].ToString()
             });
 
         public static ObservableCollection<MedicineBatch> GetMedicineBatches() =>
@@ -556,7 +557,8 @@ namespace PharmacyEvo.Global
                 new SqlParameter("@CategoryId", med.CategoryId),
                 new SqlParameter("@ManufacturerId", med.ManufacturerId),
                 new SqlParameter("@Price", med.Price),
-                new SqlParameter("@IsPrescription", med.IsPrescription));
+                new SqlParameter("@IsPrescription", med.IsPrescription),
+                new SqlParameter("@ImagePath", (object)med.ImagePath ?? DBNull.Value));
         }
 
         public static void UpsertMedicineBatch(MedicineBatch batch)

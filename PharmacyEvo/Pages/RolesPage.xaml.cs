@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class RolesPage : Page
     {
         public ObservableCollection<Role> RolesCollection { get; set; }
+        private ObservableCollection<Role> _allRoles;
         public Role SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             RolesCollection = new ObservableCollection<Role>();
+            _allRoles = new ObservableCollection<Role>();
             DataGrid.ItemsSource = RolesCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allRoles.Clear();
             RolesCollection.Clear();
             var data = ProcedureDB.GetRoles();
             foreach (var item in data)
             {
+                _allRoles.Add(item);
                 RolesCollection.Add(item);
             }
         }
@@ -49,6 +53,17 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            RolesCollection.Clear();
+
+            foreach (var role in _allRoles)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    role.RoleName?.ToLower().Contains(searchText) == true)
+                {
+                    RolesCollection.Add(role);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

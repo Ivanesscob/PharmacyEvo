@@ -13,6 +13,7 @@ namespace PharmacyEvo.Pages
     public partial class CategoriesPage : Page
     {
         public ObservableCollection<Category> CategoriesCollection { get; set; }
+        private ObservableCollection<Category> _allCategories;
         public Category SelectedItem { get; set; }
         public bool IsAdmin { get; set; }
 
@@ -20,6 +21,7 @@ namespace PharmacyEvo.Pages
         {
             InitializeComponent();
             CategoriesCollection = new ObservableCollection<Category>();
+            _allCategories = new ObservableCollection<Category>();
             DataGrid.ItemsSource = CategoriesCollection;
             IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
@@ -28,10 +30,12 @@ namespace PharmacyEvo.Pages
 
         private void LoadData()
         {
+            _allCategories.Clear();
             CategoriesCollection.Clear();
             var data = ProcedureDB.GetCategories();
             foreach (var item in data)
             {
+                _allCategories.Add(item);
                 CategoriesCollection.Add(item);
             }
         }
@@ -49,6 +53,17 @@ namespace PharmacyEvo.Pages
 
         private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var searchText = SearchTextBox.Text?.ToLower() ?? "";
+            CategoriesCollection.Clear();
+
+            foreach (var category in _allCategories)
+            {
+                if (string.IsNullOrEmpty(searchText) ||
+                    category.CategoryName?.ToLower().Contains(searchText) == true)
+                {
+                    CategoriesCollection.Add(category);
+                }
+            }
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

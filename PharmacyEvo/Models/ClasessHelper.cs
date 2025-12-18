@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -87,6 +87,7 @@ namespace PharmacyEvo.Models
         public int ManufacturerId { get; set; }
         public decimal Price { get; set; }
         public bool IsPrescription { get; set; }
+        public string ImagePath { get; set; }
     }
     #endregion
 
