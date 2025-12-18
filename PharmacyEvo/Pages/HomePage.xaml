@@ -182,17 +182,17 @@
 
                 <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <Button Content="Роли" Height="36" Margin="0,0,0,8" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}"/>
-                        <Button Content="Клиенты" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Сотрудники" Height="36" Margin="0,0,0,8" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}"/>
-                        <Button Content="Поставщики" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Производители" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Страны" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Категории" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Лекарства" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Партии лекарств" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Поставки" Height="36" Margin="0,0,0,8"/>
-                        <Button Content="Заказы" Height="36" Margin="0,0,0,8"/>
+                        <Button Content="Роли" Height="36" Margin="0,0,0,8" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}" Click="RolesButton_Click"/>
+                        <Button Content="Клиенты" Height="36" Margin="0,0,0,8" Click="ClientsButton_Click"/>
+                        <Button Content="Сотрудники" Height="36" Margin="0,0,0,8" Visibility="{Binding IsAdmin, Converter={StaticResource BoolToVisibility}}" Click="EmployeesButton_Click"/>
+                        <Button Content="Поставщики" Height="36" Margin="0,0,0,8" Click="SuppliersButton_Click"/>
+                        <Button Content="Производители" Height="36" Margin="0,0,0,8" Click="ManufacturersButton_Click"/>
+                        <Button Content="Страны" Height="36" Margin="0,0,0,8" Click="CountriesButton_Click"/>
+                        <Button Content="Категории" Height="36" Margin="0,0,0,8" Click="CategoriesButton_Click"/>
+                        <Button Content="Лекарства" Height="36" Margin="0,0,0,8" Click="MedicinesButton_Click"/>
+                        <Button Content="Партии лекарств" Height="36" Margin="0,0,0,8" Click="MedicineBatchesButton_Click"/>
+                        <Button Content="Поставки" Height="36" Margin="0,0,0,8" Click="SuppliesButton_Click"/>
+                        <Button Content="Заказы" Height="36" Margin="0,0,0,8" Click="OrdersButton_Click"/>
                     </StackPanel>
                 </ScrollViewer>
 
@@ -202,7 +202,7 @@
                             Height="36"
                             Background="#FFF3F4F6"
                             BorderBrush="#FFE5E7EB"
-                            Foreground="#FF111827"/>
+                            Foreground="#FF111827" Click="Button_Click"/>
                 </StackPanel>
             </Grid>
         </Border>

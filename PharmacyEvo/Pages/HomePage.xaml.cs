@@ -25,6 +25,67 @@ namespace PharmacyEvo.Pages
         {
             GlobalClass.MainFrame.Navigate(new ProfilePage());
         }
+
+        private void RolesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new RolesPage());
+        }
+
+        private void ClientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new ClientsPage());
+        }
+
+        private void EmployeesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new EmployeesPage());
+        }
+
+        private void SuppliersButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new SuppliersPage());
+        }
+
+        private void ManufacturersButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new ManufacturersPage());
+        }
+
+        private void CountriesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new CountriesPage());
+        }
+
+        private void CategoriesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new CategoriesPage());
+        }
+
+        private void MedicinesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new MedicinesPage());
+        }
+
+        private void MedicineBatchesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new MedicineBatchesPage());
+        }
+
+        private void SuppliesButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new SuppliesPage());
+        }
+
+        private void OrdersButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame.Navigate(new OrdersPage());
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.CurrentUser = null;
+            GlobalClass.MainFrame.Navigate(new Auth.LoginPage());
+        }
     }
 }
 
