@@ -7,6 +7,18 @@
       Title="Вход для сотрудников">
 
     <Grid Background="#FFF7F7F7">
+        <Button Content="Назад"
+                Height="34"
+                MinWidth="110"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="18,18,0,0"
+                Padding="12,5"
+                Background="#FFF3F4F6"
+                BorderBrush="#FFE5E7EB"
+                Foreground="#FF111827"
+                Click="BackButton_Click"/>
+
         <Border HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Background="White"

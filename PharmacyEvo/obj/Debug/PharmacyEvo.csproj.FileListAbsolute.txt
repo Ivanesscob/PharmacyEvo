@@ -4,10 +4,15 @@ C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\bin\Debug\PharmacyEvo.pdb
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo.csproj.AssemblyReference.cache
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\LoginPage.baml
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\RegisterPage.baml
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\EmployeeLoginPage.baml
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\HomePage.baml
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\MainWindow.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\LoginPage.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\RegisterPage.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\Auth\EmployeeLoginPage.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\HomePage.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\App.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo_MarkupCompile.cache
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo_MarkupCompile.lref
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\MainWindow.baml
@@ -17,5 +22,7 @@ C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo.csproj.Generat
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo.csproj.CoreCompileInputs.cache
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo.exe
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\PharmacyEvo.pdb
-C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\HomePage.baml
-C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\HomePage.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\ProfilePage.baml
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\ProfilePage.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Windows\EditValueWindow.baml
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Windows\EditValueWindow.g.cs

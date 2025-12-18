@@ -74,8 +74,9 @@ namespace PharmacyEvo.Global
                                     RoleId = Convert.ToInt32(row["RoleId"]),
                                     DateCreated = Convert.ToDateTime(row["HireDate"]),
                                     IsActive = Convert.ToBoolean(row["IsActive"]),
-                                    IsCustomer = false
+                                    IsManeger = true
                                 };
+                                if (GlobalClass.CurrentUser.RoleId == 1) GlobalClass.CurrentUser.IsAdmin = true;
                                 return true;
                             }
                         }
@@ -151,6 +152,52 @@ namespace PharmacyEvo.Global
 
                 MessageBox.Show("Пользователь успешно добавлен!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                 return true;
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка базы данных", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+        }
+
+        public static bool UpdateUser(User currentUser)
+        {
+            string connectionString = @"Server=localhost;Database=PharmacyDB;Trusted_Connection=True;";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = conn;
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        if (currentUser.IsCustomer)
+                            cmd.CommandText = "UpdateCustomer";
+                        else
+                            cmd.CommandText = "UpdateEmployee";
+
+                        if (currentUser.IsCustomer)
+                            cmd.Parameters.AddWithValue("@CustomerId", currentUser.UserId);
+                        else
+                            cmd.Parameters.AddWithValue("@EmployeeId", currentUser.UserId);
+
+                        cmd.Parameters.AddWithValue("@FullName", currentUser.FullName);
+                        cmd.Parameters.AddWithValue("@Email", currentUser.Email);
+                        cmd.Parameters.AddWithValue("@Phone", currentUser.Phone);
+                        cmd.Parameters.AddWithValue("@Password", currentUser.Password);
+                        cmd.Parameters.AddWithValue("@RoleId", currentUser.RoleId);
+                        cmd.Parameters.AddWithValue(currentUser.IsCustomer ? "@RegistrationDate" : "@HireDate", currentUser.DateCreated);
+                        cmd.Parameters.AddWithValue("@IsActive", currentUser.IsActive);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+                
             }
             catch (SqlException ex)
             {

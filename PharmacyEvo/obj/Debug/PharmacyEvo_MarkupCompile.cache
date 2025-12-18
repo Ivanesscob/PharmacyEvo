@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\App.xaml
-42000541695
+71297122443
 
-131192075034
+171008098927
 13-1310406943
-MainWindow.xaml;Pages\Auth\LoginPage.xaml;Pages\Auth\RegisterPage.xaml;Pages\HomePage.xaml;
+MainWindow.xaml;Pages\Auth\LoginPage.xaml;Pages\Auth\RegisterPage.xaml;Pages\Auth\EmployeeLoginPage.xaml;Pages\HomePage.xaml;Pages\ProfilePage.xaml;Windows\EditValueWindow.xaml;
 
 False
 
