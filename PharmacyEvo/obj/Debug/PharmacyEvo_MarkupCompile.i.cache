@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\App.xaml
-18-2082440186
+291068074490
 
-30609792674
+411594050402
 13-1310406943
-MainWindow.xaml;Pages\Auth\LoginPage.xaml;Pages\Auth\RegisterPage.xaml;Pages\Auth\EmployeeLoginPage.xaml;Pages\HomePage.xaml;Pages\ProfilePage.xaml;Pages\RolesPage.xaml;Pages\ClientsPage.xaml;Pages\EmployeesPage.xaml;Pages\SuppliersPage.xaml;Pages\ManufacturersPage.xaml;Pages\CountriesPage.xaml;Pages\CategoriesPage.xaml;Pages\MedicinesPage.xaml;Pages\MedicineBatchesPage.xaml;Pages\SuppliesPage.xaml;Pages\OrdersPage.xaml;Windows\EditValueWindow.xaml;
+MainWindow.xaml;Pages\Auth\LoginPage.xaml;Pages\Auth\RegisterPage.xaml;Pages\Auth\EmployeeLoginPage.xaml;Pages\HomePage.xaml;Pages\ProfilePage.xaml;Pages\RolesPage.xaml;Pages\ClientsPage.xaml;Pages\EmployeesPage.xaml;Pages\SuppliersPage.xaml;Pages\ManufacturersPage.xaml;Pages\CountriesPage.xaml;Pages\CategoriesPage.xaml;Pages\MedicinesPage.xaml;Pages\MedicineBatchesPage.xaml;Pages\SuppliesPage.xaml;Pages\OrdersPage.xaml;Pages\AddEditRolePage.xaml;Pages\AddEditCountryPage.xaml;Pages\AddEditCategoryPage.xaml;Pages\AddEditManufacturerPage.xaml;Pages\AddEditSupplierPage.xaml;Pages\AddEditMedicinePage.xaml;Pages\AddEditMedicineBatchPage.xaml;Pages\AddEditSupplyPage.xaml;Pages\AddEditOrderPage.xaml;Pages\AddEditCustomerPage.xaml;Pages\AddEditEmployeePage.xaml;Windows\EditValueWindow.xaml;
 
 True
 

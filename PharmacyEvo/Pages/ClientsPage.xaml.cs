@@ -14,12 +14,14 @@ namespace PharmacyEvo.Pages
     {
         public ObservableCollection<Customer> ClientsCollection { get; set; }
         public Customer SelectedItem { get; set; }
+        public bool IsAdmin { get; set; }
 
         public ClientsPage()
         {
             InitializeComponent();
             ClientsCollection = new ObservableCollection<Customer>();
             DataGrid.ItemsSource = ClientsCollection;
+            IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
             LoadData();
         }
@@ -62,6 +64,23 @@ namespace PharmacyEvo.Pages
                 DataGrid.Columns.RemoveAt(0);
                 emptyColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Star);
                 DataGrid.Columns.Add(emptyColumn);
+            }
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame?.Navigate(new AddEditCustomerPage());
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedItem != null)
+            {
+                GlobalClass.MainFrame?.Navigate(new AddEditCustomerPage(SelectedItem));
+            }
+            else
+            {
+                MessageBox.Show("Выберите запись для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 

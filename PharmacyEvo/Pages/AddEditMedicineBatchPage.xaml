@@ -1,0 +1,128 @@
+<Page x:Class="PharmacyEvo.Pages.AddEditMedicineBatchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      Title="Добавить/Редактировать партию лекарств">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#FFF6F8FF" Offset="0"/>
+                <GradientStop Color="#FFF7F7F7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Margin="22,18,22,22"
+                CornerRadius="14"
+                Background="White"
+                BorderBrush="#FFE6E6E6"
+                BorderThickness="1"
+                Padding="18">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Button Content="Назад"
+                        Height="34"
+                        MinWidth="110"
+                        HorizontalAlignment="Left"
+                        Padding="12,5"
+                        Background="#FFF3F4F6"
+                        BorderBrush="#FFE5E7EB"
+                        Foreground="#FF111827"
+                        Click="BackButton_Click" />
+
+                <TextBlock Grid.Row="1"
+                           Name="TitleTextBlock"
+                           Text="Добавить партию лекарств"
+                           FontSize="24"
+                           FontWeight="SemiBold"
+                           Foreground="#FF173A7A"
+                           Margin="0,14,0,18"/>
+
+                <StackPanel Grid.Row="2" Margin="0,0,0,18">
+                    <TextBlock Text="Лекарство:"
+                               FontSize="14"
+                               Foreground="#FF374151"
+                               Margin="0,0,0,6"/>
+                    <ComboBox Name="MedicineComboBox"
+                             Height="36"
+                             Padding="12,6"
+                             VerticalContentAlignment="Center"
+                             BorderBrush="#FFE2E8F0"
+                             Background="#FFFDFDFF"
+                             DisplayMemberPath="Name"
+                             SelectedValuePath="MedicineId"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Margin="0,0,0,18">
+                    <TextBlock Text="Количество:"
+                               FontSize="14"
+                               Foreground="#FF374151"
+                               Margin="0,0,0,6"/>
+                    <TextBox Name="QuantityTextBox"
+                             Height="36"
+                             Padding="12,6"
+                             VerticalContentAlignment="Center"
+                             BorderBrush="#FFE2E8F0"
+                             Background="#FFFDFDFF"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="4" Margin="0,0,0,18">
+                    <TextBlock Text="Срок годности:"
+                               FontSize="14"
+                               Foreground="#FF374151"
+                               Margin="0,0,0,6"/>
+                    <DatePicker Name="ExpirationDatePicker"
+                               Height="36"
+                               Padding="12,6"
+                               VerticalContentAlignment="Center"
+                               BorderBrush="#FFE2E8F0"
+                               Background="#FFFDFDFF"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Margin="0,0,0,18">
+                    <TextBlock Text="Поставщик:"
+                               FontSize="14"
+                               Foreground="#FF374151"
+                               Margin="0,0,0,6"/>
+                    <ComboBox Name="SupplierComboBox"
+                             Height="36"
+                             Padding="12,6"
+                             VerticalContentAlignment="Center"
+                             BorderBrush="#FFE2E8F0"
+                             Background="#FFFDFDFF"
+                             DisplayMemberPath="Name"
+                             SelectedValuePath="SupplierId"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Сохранить"
+                            Height="36"
+                            MinWidth="120"
+                            Margin="0,0,10,0"
+                            Background="#FF10B981"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Click="SaveButton_Click"/>
+                    <Button Content="Отмена"
+                            Height="36"
+                            MinWidth="120"
+                            Background="#FFF3F4F6"
+                            BorderBrush="#FFE5E7EB"
+                            Foreground="#FF111827"
+                            Click="CancelButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

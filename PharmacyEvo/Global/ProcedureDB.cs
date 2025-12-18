@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
@@ -469,5 +469,122 @@ namespace PharmacyEvo.Global
             ExecuteDeleteProcedure("DeleteOrder", new SqlParameter("@OrderId", orderId));
         }
 
+        private static void ExecuteProcedure(string procedureName, params SqlParameter[] parameters)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(procedureName, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddRange(parameters);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static void UpsertRole(Role role)
+        {
+            ExecuteProcedure("InsertOrUpdateRole",
+                new SqlParameter("@RoleId", role.RoleId),
+                new SqlParameter("@RoleName", role.RoleName));
+        }
+
+        public static void UpsertCountry(Country country)
+        {
+            ExecuteProcedure("InsertOrUpdateCountry",
+                new SqlParameter("@CountryId", country.CountryId),
+                new SqlParameter("@CountryName", country.CountryName));
+        }
+
+        public static void UpsertManufacturer(Manufacturer manufacturer)
+        {
+            ExecuteProcedure("InsertOrUpdateManufacturer",
+                new SqlParameter("@ManufacturerId", manufacturer.ManufacturerId),
+                new SqlParameter("@Name", manufacturer.Name),
+                new SqlParameter("@CountryId", manufacturer.CountryId));
+        }
+
+        public static void UpsertSupplier(Supplier supplier)
+        {
+            ExecuteProcedure("InsertOrUpdateSupplier",
+                new SqlParameter("@SupplierId", supplier.SupplierId),
+                new SqlParameter("@Name", supplier.Name),
+                new SqlParameter("@Phone", supplier.Phone),
+                new SqlParameter("@Address", supplier.Address),
+                new SqlParameter("@CountryId", supplier.CountryId));
+        }
+
+        public static void UpsertEmployee(Employee emp)
+        {
+            ExecuteProcedure("InsertOrUpdateEmployee",
+                new SqlParameter("@EmployeeId", emp.EmployeeId),
+                new SqlParameter("@FullName", emp.FullName),
+                new SqlParameter("@Email", emp.Email),
+                new SqlParameter("@Phone", emp.Phone),
+                new SqlParameter("@Password", emp.Password),
+                new SqlParameter("@RoleId", emp.RoleId),
+                new SqlParameter("@HireDate", emp.HireDate),
+                new SqlParameter("@IsActive", emp.IsActive));
+        }
+
+        public static void UpsertCustomer(Customer cust)
+        {
+            ExecuteProcedure("InsertOrUpdateCustomer",
+                new SqlParameter("@CustomerId", cust.CustomerId),
+                new SqlParameter("@FullName", cust.FullName),
+                new SqlParameter("@Email", cust.Email),
+                new SqlParameter("@Phone", cust.Phone),
+                new SqlParameter("@Password", cust.Password),
+                new SqlParameter("@RoleId", cust.RoleId),
+                new SqlParameter("@RegistrationDate", cust.RegistrationDate),
+                new SqlParameter("@IsActive", cust.IsActive));
+        }
+
+        public static void UpsertCategory(Category cat)
+        {
+            ExecuteProcedure("InsertOrUpdateCategory",
+                new SqlParameter("@CategoryId", cat.CategoryId),
+                new SqlParameter("@CategoryName", cat.CategoryName));
+        }
+
+        public static void UpsertMedicine(Medicine med)
+        {
+            ExecuteProcedure("InsertOrUpdateMedicine",
+                new SqlParameter("@MedicineId", med.MedicineId),
+                new SqlParameter("@Name", med.Name),
+                new SqlParameter("@CategoryId", med.CategoryId),
+                new SqlParameter("@ManufacturerId", med.ManufacturerId),
+                new SqlParameter("@Price", med.Price),
+                new SqlParameter("@IsPrescription", med.IsPrescription));
+        }
+
+        public static void UpsertMedicineBatch(MedicineBatch batch)
+        {
+            ExecuteProcedure("InsertOrUpdateMedicineBatch",
+                new SqlParameter("@BatchId", batch.BatchId),
+                new SqlParameter("@MedicineId", batch.MedicineId),
+                new SqlParameter("@Quantity", batch.Quantity),
+                new SqlParameter("@ExpirationDate", batch.ExpirationDate),
+                new SqlParameter("@SupplierId", batch.SupplierId));
+        }
+
+        public static void UpsertSupply(Supply supply)
+        {
+            ExecuteProcedure("InsertOrUpdateSupply",
+                new SqlParameter("@SupplyId", supply.SupplyId),
+                new SqlParameter("@SupplierId", supply.SupplierId),
+                new SqlParameter("@SupplyDate", supply.SupplyDate));
+        }
+
+        public static void UpsertOrder(Order order)
+        {
+            ExecuteProcedure("InsertOrUpdateOrder",
+                new SqlParameter("@OrderId", order.OrderId),
+                new SqlParameter("@CustomerId", order.CustomerId),
+                new SqlParameter("@EmployeeId", order.EmployeeId),
+                new SqlParameter("@OrderDate", order.OrderDate));
+        }
+    
     }
 }

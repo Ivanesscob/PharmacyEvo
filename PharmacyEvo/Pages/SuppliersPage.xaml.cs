@@ -14,12 +14,14 @@ namespace PharmacyEvo.Pages
     {
         public ObservableCollection<Supplier> SuppliersCollection { get; set; }
         public Supplier SelectedItem { get; set; }
+        public bool IsAdmin { get; set; }
 
         public SuppliersPage()
         {
             InitializeComponent();
             SuppliersCollection = new ObservableCollection<Supplier>();
             DataGrid.ItemsSource = SuppliersCollection;
+            IsAdmin = GlobalClass.CurrentUser?.IsAdmin ?? false;
             DataContext = this;
             LoadData();
         }
@@ -62,6 +64,23 @@ namespace PharmacyEvo.Pages
                 DataGrid.Columns.RemoveAt(0);
                 emptyColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Star);
                 DataGrid.Columns.Add(emptyColumn);
+            }
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            GlobalClass.MainFrame?.Navigate(new AddEditSupplierPage());
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedItem != null)
+            {
+                GlobalClass.MainFrame?.Navigate(new AddEditSupplierPage(SelectedItem));
+            }
+            else
+            {
+                MessageBox.Show("Выберите запись для редактирования", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
