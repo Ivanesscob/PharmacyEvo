@@ -1,0 +1,192 @@
+<Page x:Class="PharmacyEvo.Pages.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      Title="Аптека Эво">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#FFF6F8FF" Offset="0"/>
+                <GradientStop Color="#FFF7F7F7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="280"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- TOP: кнопка профиля сверху (отдельно от меню) -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="22,18,22,0">
+            <Button Content="Профиль"
+                    Height="36"
+                    MinWidth="120"
+                    HorizontalAlignment="Right"
+                    Padding="14,6"
+                    Background="#FFF3F6FF"
+                    BorderBrush="#FFD6E4FF"
+                    Foreground="#FF173A7A"
+                    Click="ProfileButton_Click" />
+        </Grid>
+
+        <!-- LEFT: один общий блок -->
+        <Border Grid.Row="1" Grid.Column="0"
+                Margin="22,12,12,22"
+                CornerRadius="14"
+                Background="White"
+                BorderBrush="#FFE6E6E6"
+                BorderThickness="1"
+                Padding="18">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <StackPanel Grid.Row="0">
+                    <TextBlock Text="Аптека Эво"
+                               FontSize="28"
+                               FontWeight="SemiBold"
+                               Foreground="#FF173A7A" />
+                    <TextBlock Text="Поиск и подбор товаров — заглушки интерфейса"
+                               Margin="0,6,0,0"
+                               Foreground="#FF6B7280"/>
+                </StackPanel>
+
+                <Border Grid.Row="1" Height="1" Background="#FFF0F0F0" Margin="0,16,0,16"/>
+
+                <!-- Controls (placeholders) -->
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Search -->
+                    <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,14,0">
+                        <TextBlock Text="Поиск" Foreground="#FF555555" Margin="0,0,0,6"/>
+                        <TextBox Height="36"
+                                 Padding="12,6"
+                                 VerticalContentAlignment="Center"
+                                 ToolTip="Заглушка поиска"
+                                 BorderBrush="#FFE2E8F0"
+                                 Background="#FFFDFDFF"/>
+                    </StackPanel>
+
+                    <!-- Sort -->
+                    <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,14,0">
+                        <TextBlock Text="Сортировка" Foreground="#FF555555" Margin="0,0,0,6"/>
+                        <ComboBox Height="36" MinWidth="170" SelectedIndex="0">
+                            <ComboBoxItem Content="По названию (A→Я)"/>
+                            <ComboBoxItem Content="По цене (дешевле)"/>
+                            <ComboBoxItem Content="По цене (дороже)"/>
+                            <ComboBoxItem Content="По популярности"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Filter -->
+                    <StackPanel Grid.Row="0" Grid.Column="2" Margin="0,0,14,0">
+                        <TextBlock Text="Фильтр" Foreground="#FF555555" Margin="0,0,0,6"/>
+                        <Button Height="36"
+                                MinWidth="120"
+                                Content="Открыть"
+                                Background="#FFF3F6FF"
+                                BorderBrush="#FFD6E4FF"
+                                Foreground="#FF173A7A"/>
+                    </StackPanel>
+
+                    <!-- Apply / Reset (placeholders) -->
+                    <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Bottom">
+                        <Button Height="36"
+                                MinWidth="120"
+                                Margin="0,0,10,0"
+                                Content="Применить"
+                                Background="#FF2D6CDF"
+                                Foreground="White"
+                                BorderThickness="0"/>
+                        <Button Height="36"
+                                MinWidth="120"
+                                Content="Сбросить"
+                                Background="#FFF3F4F6"
+                                BorderBrush="#FFE5E7EB"
+                                Foreground="#FF111827"/>
+                    </StackPanel>
+
+                    <!-- Small hint -->
+                    <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+                               Margin="0,12,0,0"
+                               Foreground="#FF6B7280"
+                               Text="Все элементы выше — заглушки. Логику поиска/сортировки/фильтра подключим позже."/>
+                </Grid>
+
+                <Border Grid.Row="3"
+                        Margin="0,16,0,0"
+                        Background="#FFFAFAFB"
+                        BorderBrush="#FFF0F0F0"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="18">
+                    <StackPanel>
+                        <TextBlock Text="Контент"
+                                   FontSize="16"
+                                   FontWeight="SemiBold"
+                                   Foreground="#FF111827"
+                                   Margin="0,0,0,12"/>
+                        <TextBlock Text="Здесь позже будет список товаров/каталог."
+                                   Foreground="#FF6B7280"
+                                   FontSize="14"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- RIGHT: меню + кнопки -->
+        <Border Grid.Row="1" Grid.Column="1"
+                Margin="0,12,22,22"
+                CornerRadius="14"
+                Background="White"
+                BorderBrush="#FFE6E6E6"
+                BorderThickness="1"
+                Padding="16">
+            <StackPanel>
+                <TextBlock Text="Меню"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           Foreground="#FF111827"
+                           Margin="0,0,0,12"/>
+
+                <Button Content="Каталог" Height="36" Margin="0,0,0,8"/>
+                <Button Content="Корзина" Height="36" Margin="0,0,0,8"/>
+                <Button Content="Заказы" Height="36" Margin="0,0,0,8"/>
+                <Button Content="Избранное" Height="36" Margin="0,0,0,8"/>
+                <Button Content="Настройки" Height="36" Margin="0,0,0,18"/>
+
+                <Border Height="1" Background="#FFF0F0F0" Margin="0,0,0,12"/>
+
+                <Button Content="Выход"
+                        Height="36"
+                        Background="#FFF3F4F6"
+                        BorderBrush="#FFE5E7EB"
+                        Foreground="#FF111827"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
+
+
