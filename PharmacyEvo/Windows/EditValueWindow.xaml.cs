@@ -2,9 +2,6 @@ using System.Windows;
 
 namespace PharmacyEvo.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для EditValueWindow.xaml
-    /// </summary>
     public partial class EditValueWindow : Window
     {
         public string Caption { get; set; } = "Изменить";

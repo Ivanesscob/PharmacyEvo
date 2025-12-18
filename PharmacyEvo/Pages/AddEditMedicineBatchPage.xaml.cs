@@ -6,9 +6,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditMedicineBatchPage.xaml
-    /// </summary>
     public partial class AddEditMedicineBatchPage : Page
     {
         private MedicineBatch _medicineBatch;

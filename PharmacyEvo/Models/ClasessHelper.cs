@@ -121,14 +121,14 @@ namespace PharmacyEvo.Models
     }
     #endregion
 
-    //#region OrderItems
-    //public class OrderItem
-    //{
-    //    public int OrderItemId { get; set; }
-    //    public int OrderId { get; set; }
-    //    public int MedicineId { get; set; }
-    //    public int Quantity { get; set; }
-    //    public decimal Price { get; set; }
-    //}
-    //#endregion
+    #region OrderItems
+    public class OrderItem
+    {
+        public int OrderItemId { get; set; }
+        public int OrderId { get; set; }
+        public int MedicineId { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+    }
+    #endregion
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Icon="Pics/Phar.jpg"
         WindowState="Maximized"
-        Title="MainWindow" Height="450" Width="800">
+         Height="450" Width="800">
     <Window.Resources>
         <local:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
     </Window.Resources>

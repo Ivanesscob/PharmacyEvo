@@ -7,9 +7,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditManufacturerPage.xaml
-    /// </summary>
     public partial class AddEditManufacturerPage : Page
     {
         private Manufacturer _manufacturer;

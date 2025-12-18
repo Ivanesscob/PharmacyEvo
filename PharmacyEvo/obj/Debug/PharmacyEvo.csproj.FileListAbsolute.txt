@@ -70,3 +70,5 @@ C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\AddEditSupplyPage.g.
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\AddEditOrderPage.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\AddEditCustomerPage.g.cs
 C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\AddEditEmployeePage.g.cs
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\CartPage.baml
+C:\codeProjects\asm\PharmacyEvo\PharmacyEvo\obj\Debug\Pages\CartPage.g.cs

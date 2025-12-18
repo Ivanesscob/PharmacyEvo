@@ -7,9 +7,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для SuppliersPage.xaml
-    /// </summary>
     public partial class SuppliersPage : Page
     {
         public ObservableCollection<Supplier> SuppliersCollection { get; set; }

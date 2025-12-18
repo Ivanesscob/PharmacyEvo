@@ -7,9 +7,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для OrdersPage.xaml
-    /// </summary>
     public partial class OrdersPage : Page
     {
         public ObservableCollection<Order> OrdersCollection { get; set; }
@@ -72,7 +69,6 @@ namespace PharmacyEvo.Pages
 
         private void DataGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            // Перемещаем пустой столбец в конец после загрузки всех столбцов
             if (DataGrid.Columns.Count > 0 && DataGrid.Columns[0] is DataGridTemplateColumn)
             {
                 var emptyColumn = DataGrid.Columns[0];

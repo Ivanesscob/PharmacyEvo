@@ -7,9 +7,6 @@ using PharmacyEvo.Global;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для MedicinesPage.xaml
-    /// </summary>
     public partial class MedicinesPage : Page
     {
         public ObservableCollection<Medicine> MedicinesCollection { get; set; }

@@ -587,6 +587,86 @@ namespace PharmacyEvo.Global
                 new SqlParameter("@EmployeeId", order.EmployeeId),
                 new SqlParameter("@OrderDate", order.OrderDate));
         }
-    
+
+        public static ObservableCollection<Order> GetCustomerOrders(int customerId)
+        {
+            ObservableCollection<Order> orders = new ObservableCollection<Order>();
+            string connectionString = @"Server=localhost;Database=PharmacyDB;Trusted_Connection=True;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand("GetOrdersByCustomer", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@CustomerId", customerId);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            orders.Add(new Order
+                            {
+                                OrderId = (int)reader["OrderId"],
+                                CustomerId = (int)reader["CustomerId"],
+                                EmployeeId = (int)reader["EmployeeId"],
+                                OrderDate = (DateTime)reader["OrderDate"]
+                            });
+                        }
+                    }
+                }
+            }
+
+            return orders;
+        }
+
+
+        public static void AddOrderWithItems(int customerId, int employeeId, DateTime orderDate, List<OrderItem> items)
+        {
+            string connectionString = @"Server=localhost;Database=PharmacyDB;Trusted_Connection=True;";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlTransaction transaction = conn.BeginTransaction();
+
+                try
+                {
+                    int orderId;
+                    using (SqlCommand cmd = new SqlCommand("AddOrderWithItems", conn, transaction))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@CustomerId", customerId);
+                        cmd.Parameters.AddWithValue("@EmployeeId", employeeId);
+                        cmd.Parameters.AddWithValue("@OrderDate", orderDate);
+
+                        orderId = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+
+                    foreach (var item in items)
+                    {
+                        using (SqlCommand cmdItem = new SqlCommand(
+                            "INSERT INTO OrderItems (OrderId, MedicineId, Quantity, Price) VALUES (@OrderId, @MedicineId, @Quantity, @Price)",
+                            conn, transaction))
+                        {
+                            cmdItem.Parameters.AddWithValue("@OrderId", orderId);
+                            cmdItem.Parameters.AddWithValue("@MedicineId", item.MedicineId);
+                            cmdItem.Parameters.AddWithValue("@Quantity", item.Quantity);
+                            cmdItem.Parameters.AddWithValue("@Price", item.Price);
+
+                            cmdItem.ExecuteNonQuery();
+                        }
+                    }
+
+                    transaction.Commit();
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+            }
+        }
+
     }
 }

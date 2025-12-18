@@ -5,9 +5,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages.Auth
 {
-    /// <summary>
-    /// Логика взаимодействия для EmployeeLoginPage.xaml
-    /// </summary>
     public partial class EmployeeLoginPage : Page
     {
         public AuthModel AuthModel { get; set; } = new AuthModel();

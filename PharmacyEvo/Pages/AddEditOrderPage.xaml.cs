@@ -6,9 +6,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditOrderPage.xaml
-    /// </summary>
     public partial class AddEditOrderPage : Page
     {
         private Order _order;

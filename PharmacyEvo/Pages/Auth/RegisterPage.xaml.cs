@@ -5,9 +5,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages.Auth
 {
-    /// <summary>
-    /// Логика взаимодействия для RegisterPage.xaml
-    /// </summary>
     public partial class RegisterPage : Page
     {
         public RegisterModel Model { get; set; } = new RegisterModel();

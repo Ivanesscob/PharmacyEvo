@@ -11,9 +11,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditMedicinePage.xaml
-    /// </summary>
     public partial class AddEditMedicinePage : Page
     {
         private Medicine _medicine;
@@ -73,7 +70,7 @@ namespace PharmacyEvo.Pages
             }
             catch
             {
-                // Игнорируем ошибки загрузки изображения
+                
             }
         }
 

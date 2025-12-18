@@ -5,9 +5,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditCategoryPage.xaml
-    /// </summary>
     public partial class AddEditCategoryPage : Page
     {
         private Category _category;

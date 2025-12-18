@@ -1,21 +1,64 @@
 using System.Windows;
 using System.Windows.Controls;
+using System.Collections.ObjectModel;
 using PharmacyEvo.Global;
 using PharmacyEvo.Models;
 using PharmacyEvo.Windows;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для ProfilePage.xaml
-    /// </summary>
     public partial class ProfilePage : Page
     {
+        public ObservableCollection<Order> Orders { get; set; }
+
         public ProfilePage()
         {
             InitializeComponent();
-            DataContext = GlobalClass.CurrentUser;
+            Orders = new ObservableCollection<Order>();
+            DataContext = this;
+            LoadOrders();
         }
+
+        private void LoadOrders()
+        {
+            if (GlobalClass.CurrentUser != null && GlobalClass.CurrentUser.IsCustomer)
+            {
+                Orders.Clear();
+                var customerOrders = ProcedureDB.GetCustomerOrders(GlobalClass.CurrentUser.UserId);
+                foreach (var order in customerOrders)
+                {
+                    Orders.Add(order);
+                }
+
+                if (Orders.Count == 0)
+                {
+                    NoOrdersTextBlock.Visibility = Visibility.Visible;
+                    OrdersListBox.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    NoOrdersTextBlock.Visibility = Visibility.Collapsed;
+                    OrdersListBox.Visibility = Visibility.Visible;
+                }
+            }
+            else
+            {
+                NoOrdersTextBlock.Visibility = Visibility.Visible;
+                OrdersListBox.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void OrderDetails_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button?.Tag is Order order)
+            {
+                MessageBox.Show($"Детали заказа №{order.OrderId}\nДата: {order.OrderDate:dd.MM.yyyy HH:mm}", 
+                    "Детали заказа", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        public User CurrentUser => GlobalClass.CurrentUser;
 
         private void EditField_Click(object sender, RoutedEventArgs e)
         {

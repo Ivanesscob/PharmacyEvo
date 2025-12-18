@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace PharmacyEvo.Global
         private static Frame _mainFrame = new Frame();
 
         public static User CurrentUser { get; set; }
+        public static ObservableCollection<CartItem> Cart { get; set; } = new ObservableCollection<CartItem>();
 
         public static Frame MainFrame
         {

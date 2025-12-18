@@ -28,15 +28,25 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="22,18,22,0">
-            <Button Content="Профиль"
-                    Height="36"
-                    MinWidth="120"
-                    HorizontalAlignment="Right"
-                    Padding="14,6"
-                    Background="#FFF3F6FF"
-                    BorderBrush="#FFD6E4FF"
-                    Foreground="#FF173A7A"
-                    Click="ProfileButton_Click" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Корзина"
+                        Height="36"
+                        MinWidth="120"
+                        Margin="0,0,10,0"
+                        Padding="14,6"
+                        Background="#FF10B981"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="CartButton_Click" />
+                <Button Content="Профиль"
+                        Height="36"
+                        MinWidth="120"
+                        Padding="14,6"
+                        Background="#FFF3F6FF"
+                        BorderBrush="#FFD6E4FF"
+                        Foreground="#FF173A7A"
+                        Click="ProfileButton_Click" />
+            </StackPanel>
         </Grid>
 
         <Border Grid.Row="1" Grid.Column="0"
@@ -60,9 +70,7 @@
                                FontSize="28"
                                FontWeight="SemiBold"
                                Foreground="#FF173A7A" />
-                    <TextBlock Text="Поиск и подбор товаров — заглушки интерфейса"
-                               Margin="0,6,0,0"
-                               Foreground="#FF6B7280"/>
+                    
                 </StackPanel>
 
                 <Border Grid.Row="1" Height="1" Background="#FFF0F0F0" Margin="0,16,0,16"/>
@@ -83,78 +91,122 @@
                     
                     <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,14,0">
                         <TextBlock Text="Поиск" Foreground="#FF555555" Margin="0,0,0,6"/>
-                        <TextBox Height="36"
+                        <TextBox Name="SearchTextBox"
+                                 Height="36"
                                  Padding="12,6"
                                  VerticalContentAlignment="Center"
-                                 ToolTip="Заглушка поиска"
                                  BorderBrush="#FFE2E8F0"
-                                 Background="#FFFDFDFF"/>
+                                 Background="#FFFDFDFF"
+                                 TextChanged="SearchTextBox_TextChanged"/>
                     </StackPanel>
 
                     
                     <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,14,0">
                         <TextBlock Text="Сортировка" Foreground="#FF555555" Margin="0,0,0,6"/>
-                        <ComboBox Height="36" MinWidth="170" SelectedIndex="0">
+                        <ComboBox Name="SortComboBox"
+                                  Height="36" 
+                                  MinWidth="170" 
+                                  SelectedIndex="0"
+                                  SelectionChanged="SortComboBox_SelectionChanged">
                             <ComboBoxItem Content="По названию (A→Я)"/>
+                            <ComboBoxItem Content="По названию (Я→A)"/>
                             <ComboBoxItem Content="По цене (дешевле)"/>
                             <ComboBoxItem Content="По цене (дороже)"/>
-                            <ComboBoxItem Content="По популярности"/>
                         </ComboBox>
                     </StackPanel>
 
                     
                     <StackPanel Grid.Row="0" Grid.Column="2" Margin="0,0,14,0">
-                        <TextBlock Text="Фильтр" Foreground="#FF555555" Margin="0,0,0,6"/>
-                        <Button Height="36"
-                                MinWidth="120"
-                                Content="Открыть"
-                                Background="#FFF3F6FF"
-                                BorderBrush="#FFD6E4FF"
-                                Foreground="#FF173A7A"/>
+                        <TextBlock Text="Категория" Foreground="#FF555555" Margin="0,0,0,6"/>
+                        <ComboBox Name="CategoryFilterComboBox"
+                                  Height="36"
+                                  MinWidth="170"
+                                  DisplayMemberPath="CategoryName"
+                                  SelectedValuePath="CategoryId"
+                                  SelectionChanged="CategoryFilterComboBox_SelectionChanged"/>
                     </StackPanel>
 
                     
                     <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Bottom">
                         <Button Height="36"
                                 MinWidth="120"
-                                Margin="0,0,10,0"
-                                Content="Применить"
-                                Background="#FF2D6CDF"
-                                Foreground="White"
-                                BorderThickness="0"/>
-                        <Button Height="36"
-                                MinWidth="120"
                                 Content="Сбросить"
                                 Background="#FFF3F4F6"
                                 BorderBrush="#FFE5E7EB"
-                                Foreground="#FF111827"/>
+                                Foreground="#FF111827"
+                                Click="ResetFiltersButton_Click"/>
                     </StackPanel>
-
-                    
-                    <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
-                               Margin="0,12,0,0"
-                               Foreground="#FF6B7280"
-                               Text="Все элементы выше — заглушки. Логику поиска/сортировки/фильтра подключим позже."/>
                 </Grid>
 
-                <Border Grid.Row="3"
-                        Margin="0,16,0,0"
-                        Background="#FFFAFAFB"
-                        BorderBrush="#FFF0F0F0"
-                        BorderThickness="1"
-                        CornerRadius="12"
-                        Padding="18">
-                    <StackPanel>
-                        <TextBlock Text="Контент"
-                                   FontSize="16"
-                                   FontWeight="SemiBold"
-                                   Foreground="#FF111827"
-                                   Margin="0,0,0,12"/>
-                        <TextBlock Text="Здесь позже будет список товаров/каталог."
-                                   Foreground="#FF6B7280"
-                                   FontSize="14"/>
-                    </StackPanel>
-                </Border>
+                <ScrollViewer Grid.Row="3"
+                              Margin="0,16,0,0"
+                              VerticalScrollBarVisibility="Auto">
+                    <ItemsControl Name="MedicinesItemsControl">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Width="200"
+                                        Height="280"
+                                        Margin="0,0,12,12"
+                                        Background="White"
+                                        BorderBrush="#FFE6E6E6"
+                                        BorderThickness="1"
+                                        CornerRadius="8"
+                                        Padding="12">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="120"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        
+                                        <Border Grid.Row="0"
+                                                Background="#FFF9FAFB"
+                                                BorderBrush="#FFE2E8F0"
+                                                BorderThickness="1"
+                                                CornerRadius="6"
+                                                Margin="0,0,0,8">
+                                            <Image Source="{Binding ImageSource}"
+                                                   Stretch="Uniform"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"/>
+                                        </Border>
+                                        
+                                        <TextBlock Grid.Row="1"
+                                                   Text="{Binding Name}"
+                                                   FontSize="14"
+                                                   FontWeight="SemiBold"
+                                                   Foreground="#FF111827"
+                                                   TextWrapping="Wrap"
+                                                   Margin="0,0,0,6"/>
+                                        
+                                        <TextBlock Grid.Row="2"
+                                                   Text="{Binding PriceText}"
+                                                   FontSize="16"
+                                                   FontWeight="Bold"
+                                                   Foreground="#FF10B981"
+                                                   Margin="0,0,0,8"/>
+                                        
+                                        <Button Grid.Row="3"
+                                                Content="В корзину"
+                                                Height="32"
+                                                Background="#FF10B981"
+                                                Foreground="White"
+                                                BorderThickness="0"
+                                                Click="AddToCartButton_Click"
+                                                Tag="{Binding}"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
             </Grid>
         </Border>
 

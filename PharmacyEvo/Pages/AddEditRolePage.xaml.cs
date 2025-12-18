@@ -5,9 +5,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditRolePage.xaml
-    /// </summary>
     public partial class AddEditRolePage : Page
     {
         private Role _role;

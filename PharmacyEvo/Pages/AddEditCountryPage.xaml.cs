@@ -5,9 +5,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для AddEditCountryPage.xaml
-    /// </summary>
     public partial class AddEditCountryPage : Page
     {
         private Country _country;

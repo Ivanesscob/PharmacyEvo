@@ -7,9 +7,6 @@ using PharmacyEvo.Models;
 
 namespace PharmacyEvo.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для EmployeesPage.xaml
-    /// </summary>
     public partial class EmployeesPage : Page
     {
         public ObservableCollection<Employee> EmployeesCollection { get; set; }

@@ -167,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Pages\CartPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Windows\EditValueWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -183,7 +187,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\AuthModel.cs" />
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\CartItemViewModel.cs" />
     <Compile Include="Models\ClasessHelper.cs" />
+    <Compile Include="Models\MedicineViewModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Pages\HomePage.xaml.cs">
@@ -280,6 +287,10 @@
     </Compile>
     <Compile Include="Pages\AddEditEmployeePage.xaml.cs">
       <DependentUpon>AddEditEmployeePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pages\CartPage.xaml.cs">
+      <DependentUpon>CartPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Windows\EditValueWindow.xaml.cs">
