@@ -73,13 +73,27 @@
                           Grid.Row="3"
                           AutoGenerateColumns="True"
                           CanUserAddRows="False"
+                          IsReadOnly="True"
                           SelectionMode="Single"
                           SelectionChanged="DataGrid_SelectionChanged"
+                          Loaded="DataGrid_Loaded"
                           BorderBrush="#FFE6E6E6"
+                          SelectedItem="{Binding SelectedItem}"
                           BorderThickness="1"
                           HeadersVisibility="Column"
                           GridLinesVisibility="All"
-                          AlternatingRowBackground="#FFF9FAFB"/>
+                          AlternatingRowBackground="#FFF9FAFB">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="*">
+                            <DataGridTemplateColumn.HeaderTemplate>
+                                <DataTemplate/>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate/>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
 
                 <TextBlock Grid.Row="4"
                            Name="StatusTextBlock"

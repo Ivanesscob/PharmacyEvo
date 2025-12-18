@@ -139,6 +139,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\AuthModel.cs" />
+    <Compile Include="Models\ClasessHelper.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Pages\HomePage.xaml.cs">
