@@ -54,11 +54,26 @@ namespace PharmacyEvo.Pages
         {
             if (MedicineComboBox.SelectedValue == null ||
                 string.IsNullOrWhiteSpace(QuantityTextBox.Text) ||
-                !int.TryParse(QuantityTextBox.Text, out _) ||
+                !int.TryParse(QuantityTextBox.Text, out int quantity) ||
+                quantity <= 0 ||
                 ExpirationDatePicker.SelectedDate == null ||
                 SupplierComboBox.SelectedValue == null)
             {
-                MessageBox.Show("Заполните все поля корректно!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                if (MedicineComboBox.SelectedValue == null ||
+                    string.IsNullOrWhiteSpace(QuantityTextBox.Text) ||
+                    ExpirationDatePicker.SelectedDate == null ||
+                    SupplierComboBox.SelectedValue == null)
+                {
+                    MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else if (!int.TryParse(QuantityTextBox.Text, out _))
+                {
+                    MessageBox.Show("Количество должно быть числом!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Количество должно быть больше нуля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
                 return;
             }
 
@@ -66,7 +81,7 @@ namespace PharmacyEvo.Pages
             {
                 BatchId = _isEditMode ? _medicineBatch.BatchId : 0,
                 MedicineId = (int)MedicineComboBox.SelectedValue,
-                Quantity = int.Parse(QuantityTextBox.Text),
+                Quantity = quantity,
                 ExpirationDate = ExpirationDatePicker.SelectedDate.Value,
                 SupplierId = (int)SupplierComboBox.SelectedValue
             };

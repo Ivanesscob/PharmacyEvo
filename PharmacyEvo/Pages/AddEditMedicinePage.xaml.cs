@@ -131,19 +131,34 @@ namespace PharmacyEvo.Pages
                 CategoryComboBox.SelectedValue == null ||
                 ManufacturerComboBox.SelectedValue == null ||
                 string.IsNullOrWhiteSpace(PriceTextBox.Text) ||
-                !decimal.TryParse(PriceTextBox.Text, out _))
+                !decimal.TryParse(PriceTextBox.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal price) ||
+                price <= 0)
             {
-                MessageBox.Show("Заполните все поля корректно!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                if (string.IsNullOrWhiteSpace(NameTextBox.Text) ||
+                    CategoryComboBox.SelectedValue == null ||
+                    ManufacturerComboBox.SelectedValue == null ||
+                    string.IsNullOrWhiteSpace(PriceTextBox.Text))
+                {
+                    MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else if (!decimal.TryParse(PriceTextBox.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out _))
+                {
+                    MessageBox.Show("Цена должна быть числом!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Цена должна быть больше нуля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
                 return;
             }
 
             var medicine = new Medicine
             {
                 MedicineId = _isEditMode ? _medicine.MedicineId : 0,
-                Name = NameTextBox.Text,
+                Name = NameTextBox.Text.Trim(),
                 CategoryId = (int)CategoryComboBox.SelectedValue,
                 ManufacturerId = (int)ManufacturerComboBox.SelectedValue,
-                Price = decimal.Parse(PriceTextBox.Text, CultureInfo.InvariantCulture),
+                Price = price,
                 IsPrescription = IsPrescriptionCheckBox.IsChecked ?? false,
                 ImagePath = _selectedImagePath ?? (_isEditMode ? _medicine.ImagePath : null)
             };

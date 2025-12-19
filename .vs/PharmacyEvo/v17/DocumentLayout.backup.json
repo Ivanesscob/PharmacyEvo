@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\codeProjects\\asm\\PharmacyEvo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|c:\\codeprojects\\asm\\pharmacyevo\\pharmacyevo\\global\\proceduredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|c:\\codeprojects\\asm\\pharmacyevo\\pharmacyevo\\pages\\auth\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\auth\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\global\\proceduredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\global\\proceduredb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\models\\clasesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\models\\clasesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|c:\\codeprojects\\asm\\pharmacyevo\\pharmacyevo\\models\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\models\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\medicinebatchespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\medicinebatchespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\manufacturerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\manufacturerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\models\\clasesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\models\\clasesshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\models\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\models\\cartitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\cartpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,20 +111,8 @@
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\suppliespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\orderspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\medicinespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\medicinespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\medicinebatchespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\medicinebatchespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\manufacturerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\manufacturerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\countriespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\windows\\editvaluewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\windows\\editvaluewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\windows\\editvaluewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,20 +159,12 @@
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\employeeloginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\auth\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\loginpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\auth\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\auth\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|solutionrelative:pharmacyevo\\pages\\auth\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5DE7E08-4B30-45C6-B242-401A694B9290}|PharmacyEvo\\PharmacyEvo.csproj|C:\\codeProjects\\asm\\PharmacyEvo\\pharmacyevo\\pages\\auth\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -186,7 +186,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,33 +194,161 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartItemViewModel.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\CartItemViewModel.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Models\\CartItemViewModel.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\CartItemViewModel.cs",
-              "RelativeToolTip": "PharmacyEvo\\Models\\CartItemViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T23:51:12.08Z",
+              "WhenOpened": "2025-12-18T16:30:51.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PharmacyEvo\\MainWindow.xaml",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\MainWindow.xaml",
+              "RelativeToolTip": "PharmacyEvo\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-18T16:01:53.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MedicineBatchesPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T20:30:46.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T20:31:02.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:25:04.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProcedureDB.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Global\\ProcedureDB.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Global\\ProcedureDB.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Global\\ProcedureDB.cs*",
-              "RelativeToolTip": "PharmacyEvo\\Global\\ProcedureDB.cs*",
-              "ViewState": "AgIAAFoCAAAAAAAAAAAYwG0CAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Global\\ProcedureDB.cs",
+              "RelativeToolTip": "PharmacyEvo\\Global\\ProcedureDB.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwHQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T16:16:36.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T16:16:36.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T16:31:48.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManufacturersPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T20:30:29.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\HomePage.xaml",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\HomePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-18T18:56:31.764Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\HomePage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\HomePage.xaml.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAswIEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T19:06:47.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClasessHelper.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\ClasessHelper.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Models\\ClasessHelper.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\ClasessHelper.cs",
+              "RelativeToolTip": "PharmacyEvo\\Models\\ClasessHelper.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T20:44:12.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RolesPage.xaml",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\RolesPage.xaml",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\RolesPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-18T21:43:37.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RolesPage.xaml.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\RolesPage.xaml.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml.cs",
+              "RelativeToolTip": "PharmacyEvo\\Pages\\RolesPage.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAApwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T20:31:14.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "AddEditManufacturerPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\AddEditManufacturerPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\AddEditManufacturerPage.xaml.cs",
@@ -233,76 +361,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "RolesPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\RolesPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\RolesPage.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAApwEYAAAANAAAAAAAAAA==",
+              "Title": "CartItemViewModel.cs",
+              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\CartItemViewModel.cs",
+              "RelativeDocumentMoniker": "PharmacyEvo\\Models\\CartItemViewModel.cs",
+              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\CartItemViewModel.cs",
+              "RelativeToolTip": "PharmacyEvo\\Models\\CartItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T20:31:14.744Z"
+              "WhenOpened": "2025-12-18T23:51:12.08Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "RolesPage.xaml",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\RolesPage.xaml",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\RolesPage.xaml",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\RolesPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-18T21:43:37.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\HomePage.xaml",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml*",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\HomePage.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-18T18:56:31.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClasessHelper.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\ClasessHelper.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Models\\ClasessHelper.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\ClasessHelper.cs",
-              "RelativeToolTip": "PharmacyEvo\\Models\\ClasessHelper.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAuwIQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T20:44:12.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\HomePage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\HomePage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\HomePage.xaml.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAswIkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:06:47.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PharmacyEvo\\MainWindow.xaml",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\MainWindow.xaml*",
-              "RelativeToolTip": "PharmacyEvo\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-18T16:01:53.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CartPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\CartPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\CartPage.xaml.cs",
@@ -314,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "EditValueWindow.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Windows\\EditValueWindow.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Windows\\EditValueWindow.xaml",
@@ -325,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\User.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Models\\User.cs",
@@ -337,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "ProfilePage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ProfilePage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ProfilePage.xaml",
@@ -348,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "EmployeeLoginPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\EmployeeLoginPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\EmployeeLoginPage.xaml.cs",
@@ -360,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "AddEditMedicinePage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\AddEditMedicinePage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\AddEditMedicinePage.xaml.cs",
@@ -372,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "AddEditCategoryPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\AddEditCategoryPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\AddEditCategoryPage.xaml",
@@ -383,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "GlobalClass.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Global\\GlobalClass.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Global\\GlobalClass.cs",
@@ -395,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "AddEditManufacturerPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\AddEditManufacturerPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\AddEditManufacturerPage.xaml",
@@ -406,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "EmployeesPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\EmployeesPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\EmployeesPage.xaml.cs",
@@ -418,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "CategoriesPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\CategoriesPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\CategoriesPage.xaml.cs",
@@ -430,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "Pages\\AddEditCategoryPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\AddEditCategoryPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\AddEditCategoryPage.xaml.cs",
@@ -442,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "SuppliesPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\SuppliesPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\SuppliesPage.xaml.cs",
@@ -454,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "CategoriesPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\CategoriesPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\CategoriesPage.xaml",
@@ -465,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "SuppliersPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\SuppliersPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\SuppliersPage.xaml.cs",
@@ -477,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "EmployeesPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\EmployeesPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\EmployeesPage.xaml",
@@ -488,19 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ManufacturersPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\ManufacturersPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T20:30:29.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "CountriesPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\CountriesPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\CountriesPage.xaml.cs",
@@ -512,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "ClientsPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ClientsPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ClientsPage.xaml.cs",
@@ -524,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Models\\RegisterModel.cs",
@@ -536,19 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "OrdersPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\OrdersPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T20:31:02.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "MedicinesPage.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\MedicinesPage.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\MedicinesPage.xaml.cs",
@@ -560,43 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MedicineBatchesPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\MedicineBatchesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T20:30:46.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T19:25:04.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\Auth\\LoginPage.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T16:30:51.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "EditValueWindow.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Windows\\EditValueWindow.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Windows\\EditValueWindow.xaml.cs",
@@ -608,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\MainWindow.xaml.cs",
@@ -620,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "EmployeeLoginPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\EmployeeLoginPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\EmployeeLoginPage.xaml",
@@ -631,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "BoolToVisibilityConverter.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Converters\\BoolToVisibilityConverter.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Converters\\BoolToVisibilityConverter.cs",
@@ -644,18 +654,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
-              "ToolTip": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
-              "RelativeToolTip": "PharmacyEvo\\Pages\\Auth\\RegisterPage.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T16:31:48.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
               "Title": "AuthModel.cs",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Models\\AuthModel.cs",
               "RelativeDocumentMoniker": "PharmacyEvo\\Models\\AuthModel.cs",
@@ -667,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\codeProjects\\asm\\PharmacyEvo\\PharmacyEvo\\Pages\\Auth\\LoginPage.xaml",
               "RelativeDocumentMoniker": "PharmacyEvo\\Pages\\Auth\\LoginPage.xaml",

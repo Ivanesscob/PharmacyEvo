@@ -49,7 +49,7 @@ namespace PharmacyEvo.Pages
             var category = new Category
             {
                 CategoryId = _isEditMode ? _category.CategoryId : 0,
-                CategoryName = CategoryNameTextBox.Text
+                CategoryName = CategoryNameTextBox.Text.Trim()
             };
 
             ProcedureDB.UpsertCategory(category);

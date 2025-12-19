@@ -8,6 +8,7 @@
       Title="Аптека Эво">
     <Page.Resources>
         <local:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+        <local:PriceToBooleanConverter x:Key="PriceToBooleanConverter"/>
     </Page.Resources>
 
     <Grid>
@@ -152,11 +153,22 @@
                                 <Border Width="200"
                                         Height="280"
                                         Margin="0,0,12,12"
-                                        Background="White"
-                                        BorderBrush="#FFE6E6E6"
-                                        BorderThickness="1"
                                         CornerRadius="8"
                                         Padding="12">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Background" Value="White"/>
+                                            <Setter Property="BorderBrush" Value="#FFE6E6E6"/>
+                                            <Setter Property="BorderThickness" Value="1"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Price, Converter={StaticResource PriceToBooleanConverter}}" Value="True">
+                                                    <Setter Property="Background" Value="#FFFFF4E6"/>
+                                                    <Setter Property="BorderBrush" Value="#FFFFB84D"/>
+                                                    <Setter Property="BorderThickness" Value="2"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="120"/>

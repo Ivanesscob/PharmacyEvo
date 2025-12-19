@@ -182,6 +182,7 @@
     <Compile Include="Global\GlobalClass.cs" />
     <Compile Include="Global\ProcedureDB.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\PriceToBooleanConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

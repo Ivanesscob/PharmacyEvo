@@ -16,6 +16,12 @@ namespace PharmacyEvo.Windows
 
         private void Ok_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(Value))
+            {
+                MessageBox.Show("Поле не может быть пустым!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             DialogResult = true;
             Close();
         }

@@ -49,7 +49,7 @@ namespace PharmacyEvo.Pages
             var role = new Role
             {
                 RoleId = _isEditMode ? _role.RoleId : 0,
-                RoleName = RoleNameTextBox.Text
+                RoleName = RoleNameTextBox.Text.Trim()
             };
 
             ProcedureDB.UpsertRole(role);

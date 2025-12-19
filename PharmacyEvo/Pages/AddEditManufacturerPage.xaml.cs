@@ -56,7 +56,7 @@ namespace PharmacyEvo.Pages
             var manufacturer = new Manufacturer
             {
                 ManufacturerId = _isEditMode ? _manufacturer.ManufacturerId : 0,
-                Name = NameTextBox.Text,
+                Name = NameTextBox.Text.Trim(),
                 CountryId = (int)CountryComboBox.SelectedValue
             };
 

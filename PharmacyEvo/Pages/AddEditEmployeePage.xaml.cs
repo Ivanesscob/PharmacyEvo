@@ -1,4 +1,6 @@
+using System;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using PharmacyEvo.Global;
@@ -62,12 +64,18 @@ namespace PharmacyEvo.Pages
                 return;
             }
 
+            if (!IsValidEmail(EmailTextBox.Text.Trim()))
+            {
+                MessageBox.Show("Введите корректный email адрес!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             var employee = new Employee
             {
                 EmployeeId = _isEditMode ? _employee.EmployeeId : 0,
-                FullName = FullNameTextBox.Text,
-                Email = EmailTextBox.Text,
-                Phone = PhoneTextBox.Text,
+                FullName = FullNameTextBox.Text.Trim(),
+                Email = EmailTextBox.Text.Trim(),
+                Phone = PhoneTextBox.Text.Trim(),
                 Password = PasswordTextBox.Text,
                 RoleId = (int)RoleComboBox.SelectedValue,
                 HireDate = HireDatePicker.SelectedDate.Value,
@@ -81,6 +89,22 @@ namespace PharmacyEvo.Pages
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             BackButton_Click(sender, e);
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                var emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase);
+                return emailRegex.IsMatch(email);
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

@@ -49,7 +49,7 @@ namespace PharmacyEvo.Pages
             var country = new Country
             {
                 CountryId = _isEditMode ? _country.CountryId : 0,
-                CountryName = CountryNameTextBox.Text
+                CountryName = CountryNameTextBox.Text.Trim()
             };
 
             ProcedureDB.UpsertCountry(country);

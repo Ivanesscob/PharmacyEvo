@@ -1,3 +1,5 @@
+using System;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Collections.ObjectModel;
@@ -96,6 +98,13 @@ namespace PharmacyEvo.Pages
             if (string.IsNullOrWhiteSpace(newValue))
             {
                 MessageBox.Show("Введите значение.", "Ошибка",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if (field == "Email" && !IsValidEmail(newValue))
+            {
+                MessageBox.Show("Введите корректный email адрес!", "Ошибка",
                     MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
@@ -203,6 +212,22 @@ namespace PharmacyEvo.Pages
                 default:
                     error = "Неизвестное поле для редактирования.";
                     return false;
+            }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                var emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.IgnoreCase);
+                return emailRegex.IsMatch(email);
+            }
+            catch
+            {
+                return false;
             }
         }
     }

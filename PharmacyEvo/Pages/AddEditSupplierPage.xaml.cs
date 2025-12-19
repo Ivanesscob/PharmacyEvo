@@ -60,9 +60,9 @@ namespace PharmacyEvo.Pages
             var supplier = new Supplier
             {
                 SupplierId = _isEditMode ? _supplier.SupplierId : 0,
-                Name = NameTextBox.Text,
-                Phone = PhoneTextBox.Text,
-                Address = AddressTextBox.Text,
+                Name = NameTextBox.Text.Trim(),
+                Phone = PhoneTextBox.Text.Trim(),
+                Address = AddressTextBox.Text.Trim(),
                 CountryId = (int)CountryComboBox.SelectedValue
             };
 
